@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk/Jasa - Jasa Desain Grafis</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #ffe599;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0066cc;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      background-color: #0066cc;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #004999;
+    }
+
+    footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jasa Desain Grafis Profesional</h1>
+  </header>
+
+  <nav>
+    <a href="halaman produk saya.html">Produk</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="perusahaan.html">Tentang Kami</a>
+  </nav>
+
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom: 30px;">Layanan Kami</h2>
+    <div class="produk-grid">
+
+      <!-- Desain Logo -->
+      <div class="card">
+        <img src="https://quickimagetools.com/uploads/image_683c1d74dee604.06321731.jpg" alt="Desain Logo">
+        <div class="card-body">
+          <h3>Desain Logo</h3>
+          <p>Logo unik dan profesional yang merepresentasikan identitas merek Anda secara kuat dan elegan.</p>
+          <a href="transaksi.html">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Poster -->
+      <div class="card">
+        <img src="https://quickimagetools.com/uploads/image_683c4b2d6598d5.19112157.jpg" alt="Desain Poster">
+        <div class="card-body">
+          <h3>Poster & Brosur</h3>
+          <p>Desain poster promosi, brosur acara, atau selebaran bisnis yang menarik dan efektif.</p>
+          <a href="transaksi.html">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Branding Kit -->
+      <div class="card">
+        <img src="https://quickimagetools.com/uploads/image_683c483181d186.65423289.jpg" alt="Branding Kit">
+        <div class="card-body">
+          <h3>Branding Kit</h3>
+          <p>Paket lengkap visual branding: logo, warna, font, dan elemen visual lainnya untuk bisnis Anda.</p>
+          <a href="transaksi.html">Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Konten Sosial Media -->
+      <div class="card">
+        <img src="https://quickimagetools.com/uploads/image_683c51234e57d5.72294328.png" alt="Konten Sosial Media">
+		<a href="https://www.tiktok.com/@abizardshafiq/video/7354458329030069512?_r=1&_t=ZS-8wqHtWwYvxN">Kunjungi Google</a>
+        <div class="card-body">
+          <h3>Konten Sosial Media</h3>
+          <p>Desain feed dan story Instagram, Facebook,TikTok, atau LinkedIn untuk meningkatkan branding dan engagement.</p>
+          <a href="transaksi.html">Pesan Sekarang</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jasa Desain Grafis</p>
+  </footer>
+
+</body>
+</html>

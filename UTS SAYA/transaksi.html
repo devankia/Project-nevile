@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaksi - Jasa Desain Grafis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #004999;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004999;
+    }
+
+    footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Formulir Transaksi</h1>
+  </header>
+
+  <nav>
+    <a href="halaman produk saya.html">Produk</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="perusahaan.html">Tentang Kami</a>
+  </nav>
+
+  <section>
+    <form action="proses_transaksi.php" method="POST" enctype="multipart/form-data">
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Nomor Telepon:</label>
+      <input type="tel" name="telepon" pattern="[0-9]{10,15}" placeholder="081234567890" required>
+
+      <label>Jenis Layanan:</label>
+      <select name="layanan" required>
+        <option value="">-- Pilih Layanan --</option>
+        <option value="logo">Desain Logo</option>
+        <option value="branding">Branding Kit</option>
+        <option value="poster">Poster / Brosur</option>
+        <option value="social">Konten Sosial Media</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label>Deskripsi Pesanan:</label>
+      <textarea name="deskripsi" rows="5" placeholder="Jelaskan kebutuhan desain Anda secara rinci..." required></textarea>
+
+      <label>Upload Referensi (jika ada):</label>
+      <input type="file" name="file_referensi" accept=".jpg,.jpeg,.png,.pdf,.ai,.psd">
+
+      <input type="submit" value="Kirim Pesanan">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jasa Desain Grafis</p>
+  </footer>
+
+</body>
+</html>
